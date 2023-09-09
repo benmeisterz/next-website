@@ -14,10 +14,10 @@ export const navLinks = [
 export const Nav = () => {
   return (
     <div className={`${sair.className}`}>
-      <header className='padding-x w-full py-[5px] bg-bglight text-light font-bold text-lg'>
+      <header className='padding-x w-full py-[45px] bg-bglight text-light font-bold text-lg'>
         <nav className='flex justify-between items-center max-container'>
           <Image
-            src='/images/logs.jpg'
+            src='/images/logo.svg'
             alt='/'
             width={164} // Set the width
             height={30}
