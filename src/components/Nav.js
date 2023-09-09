@@ -25,7 +25,7 @@ export const Nav = () => {
 
           <ul className='flex-1 flex justify-end items-center gap-16 max-lg:hidden'>
             {navLinks.map((item) => (
-              <li key={item.label}>
+              <li key={item.label} className=' hover:text-orange'>
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
