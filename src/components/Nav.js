@@ -1,4 +1,5 @@
 import { Roboto, Saira_Condensed } from 'next/font/google'
+import Image from 'next/image'
 
 const roboto = Roboto({ subsets: ['latin'], weight: '300' })
 const sair = Saira_Condensed({ subsets: ['latin'], weight: '300' })
@@ -13,9 +14,14 @@ export const navLinks = [
 export const Nav = () => {
   return (
     <div className={`${sair.className}`}>
-      <header className='padding-x w-full py-[45px] bg-bglight text-light font-bold text-lg'>
+      <header className='padding-x w-full py-[5px] bg-bglight text-light font-bold text-lg'>
         <nav className='flex justify-between items-center max-container'>
-          <h1>Logo</h1>
+          <Image
+            src='/images/logs.jpg'
+            alt='/'
+            width={164} // Set the width
+            height={30}
+          />
 
           <ul className='flex-1 flex justify-end items-center gap-16 max-lg:hidden'>
             {navLinks.map((item) => (
