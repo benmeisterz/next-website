@@ -6,12 +6,11 @@ const sair = Saira_Condensed({ subsets: ['latin'], weight: '500' })
 
 export const Hero = () => {
   return (
-    <header className='padding-x w-full py-[5px] bg-bgdark text-light font-bold text-lg lg:pt-[150px] min-h-screen'>
-      <div className='max-container flex justify-between '>
+    <header className='padding-x w-full py-[10px] bg-bgdark text-light font-bold text-lg lg:pt-[150px] min-h-screen'>
+      <div className='max-container flex  flex-col lg:flex-row justify-between align-top gap-5 max-h-[900px]'>
         <div className={`${sair.className}`}>
+          <h1 className='text-[40px] font-bold pb-[20px]'>THURSDAY, DEC 31ST</h1>
           <div className='block leading-[85px]'>
-            <h1 className='text-[40px] font-bold'>THURSDAY, DEC 31ST</h1>
-
             <h1 className='text-[80px] font-bold'>
               GREAT MUSIC <br /> EVENT OF THE <br /> YEAR WITH <br />
               GOOD VIBES
@@ -22,7 +21,7 @@ export const Hero = () => {
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, veritatis!
             </p>
           </div>
-          <div className='mt-[55px]'>
+          <div className='mt-[55px] hidden xl:block'>
             <Image
               src='/images/Arrow.png'
               alt='/'
@@ -32,13 +31,12 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div>
+        <div className='pb-8'>
           <Image
             src='/images/deftones-22lead.jpg'
             alt='/'
             width={970} // Set the width
             height={800}
-            className='flex flex-end'
           />
         </div>
       </div>
