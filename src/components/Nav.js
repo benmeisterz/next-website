@@ -1,4 +1,7 @@
-// import { Logo } from '@/assets/images'
+import { Roboto, Saira_Condensed } from 'next/font/google'
+
+const roboto = Roboto({ subsets: ['latin'], weight: '300' })
+const sair = Saira_Condensed({ subsets: ['latin'], weight: '300' })
 
 export const navLinks = [
   { href: '#home', label: 'HOME' },
@@ -9,8 +12,8 @@ export const navLinks = [
 
 export const Nav = () => {
   return (
-    <div>
-      <header className='sm:px-16 px-8 w-full py-[45px] bg-bgdark text-cyan font-bold text-lg'>
+    <div className={`${sair.className}`}>
+      <header className='padding-x w-full py-[45px] bg-bglight text-light font-bold text-lg'>
         <nav className='flex justify-between items-center max-container'>
           <h1>Logo</h1>
 
